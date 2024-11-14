@@ -1,0 +1,25 @@
+.app-footer {
+  background-color: #00497c; // couleur secondaire
+  padding: 1.5rem;
+  color: #fff;
+  text-align: center;
+
+  .footer-links {
+    margin-bottom: 1rem;
+
+    a {
+      color: #fff;
+      margin-right: 1rem;
+      text-decoration: none;
+
+      &:hover {
+        color: #82b864;
+      }
+    }
+  }
+
+  .contact-info {
+    font-size: 0.875rem;
+    color: #f1f8fc; // couleur claire
+  }
+}

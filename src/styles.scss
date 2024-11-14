@@ -1,0 +1,171 @@
+// Utilisation de la police Graphik
+@font-face {
+  font-family: 'Graphik';
+  src: url('assets/fonts/Graphik_Collection/Graphik Family/Graphik-Regular-Trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('assets/fonts/Graphik_Collection/Graphik Family/Graphik-Bold-Trial.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
+// Styles généraux
+body {
+  font-family: 'Graphik', Arial, sans-serif;
+  background-color: #f1f8fc;
+  color: #384050;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0074c7;
+  text-decoration: none;
+
+  &:hover {
+    color: #82b864;
+  }
+}
+
+button {
+  font-family: 'Graphik', Arial, sans-serif;
+  cursor: pointer;
+  background-color: #0074c7;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #00497c;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Graphik', Arial, sans-serif;
+  color: #384050;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+// Menu burger pour le site responsive
+.navbar {
+  background-color: #f1f8fc;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .navbar-brand {
+    color: #0074c7;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler {
+    background-color: #0074c7;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  .navbar-collapse {
+    @media (max-width: 768px) {
+      display: none;
+
+      &.show {
+        display: block;
+        background-color: #f1f8fc;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+    }
+  }
+
+  .navbar-nav {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .nav-item {
+      margin-right: 1rem;
+
+      @media (max-width: 768px) {
+        margin: 0;
+        padding: 0.5rem;
+      }
+
+      .nav-link {
+        color: #384050;
+        font-size: 1rem;
+        padding: 0.5rem;
+
+        &:hover {
+          color: #0074c7;
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-color: #0074c7;
+}
+
+.collapse {
+  @media (max-width: 768px) { // Modification de la largeur pour un meilleur rendu responsive
+    &.show {
+      display: block !important;
+    }
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 0.5rem;
+  border: 1px solid #00497c;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.btn-outline-success {
+  border-color: #0074c7;
+  color: #0074c7;
+
+  &:hover {
+    background-color: #0074c7;
+    color: #fff;
+  }
+}
+

@@ -1,0 +1,43 @@
+.artisan-detail {
+  background-color: #f1f8fc;
+  padding: 2rem;
+  border: 1px solid #0074c7;
+
+  .artisan-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0074c7;
+  }
+
+  .artisan-info {
+    color: #384050;
+
+    .specialty,
+    .location {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .about {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  .contact-form {
+    margin-top: 2rem;
+
+    .form-control {
+      border: 1px solid #00497c;
+    }
+
+    button {
+      background-color: #0074c7;
+      color: #fff;
+
+      &:hover {
+        background-color: #005f9e;
+      }
+    }
+  }
+}

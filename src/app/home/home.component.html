@@ -1,0 +1,31 @@
+<div class="hero-section">
+  <h1>Trouvez votre artisan</h1>
+  <h2>En quelques clics, contactez un professionnel de votre région</h2>
+  <button routerLink="/artisans" class="btn btn-primary">Commencer</button>
+</div>
+
+<div class="how-it-works mt-5">
+  <h3>Comment trouver mon artisan ?</h3>
+  <ol>
+    <li>Choisir la catégorie d'artisanat dans le menu.</li>
+    <li>Choisir un artisan.</li>
+    <li>Le contacter via le formulaire de contact.</li>
+    <li>Une réponse sera apportée sous 48h.</li>
+  </ol>
+</div>
+
+<div class="artisans-of-the-month mt-5">
+  <h3>Artisans du mois</h3>
+  <div class="artisan-card" *ngFor="let artisan of topArtisans">
+    <a [routerLink]="['/artisans', artisan.id]" class="artisan-link">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4>{{ artisan.name }}</h4>
+          <p>Note : <span *ngFor="let star of getStars(artisan.note)">&#9733;</span></p>
+          <p>Spécialité : {{ artisan.specialty }}</p>
+          <p>Localisation : {{ artisan.location }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+

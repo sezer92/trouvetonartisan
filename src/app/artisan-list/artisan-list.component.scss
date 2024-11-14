@@ -1,0 +1,56 @@
+.artisan-card {
+  border: 1px solid #0074c7;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .card-body {
+    background-color: #f1f8fc;
+    color: #384050;
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #0074c7;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #384050;
+    }
+  }
+
+  .card-footer {
+    background-color: #00497c;
+    text-align: center;
+
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        color: #82b864;
+      }
+    }
+  }
+}
+
+
+// Styles pour les étoiles de notation
+.star-rating {
+  color: #82b864; // Couleur des étoiles
+}
+
+.star-rating .fa-star {
+  font-size: 1.2rem; // Taille des étoiles
+  margin-right: 2px; // Espacement entre les étoiles
+  color: #d3d3d3; // Couleur des étoiles non remplies
+}
+
+.star-rating .fa-star.filled {
+  color: #82b864; // Couleur des étoiles remplies
+}
