@@ -65,16 +65,12 @@
                   "maximumError": "4kB"
                 }
               ],
-              "outputHashing": "all",
-              "optimization": true,
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true
+              "outputHashing": "all"
+
             },
             "development": {
               "optimization": true,
-              "extractLicenses": true,
+              "extractLicenses": false,
               "sourceMap": true
             }
           },
